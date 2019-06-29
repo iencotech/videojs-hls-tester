@@ -5,6 +5,7 @@ h1, h2 {
 #videoPlayer {
   width: 100%;
   background-color: black;
+  min-height: 400px;
 }
 
 .user-input-container, .title-container {

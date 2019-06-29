@@ -27,6 +27,9 @@ function play() {
     contentType = 'application/x-mpegURL';
   }
   player.src({type: contentType, src: url});
+  player.on('ready', function () {
+    player.play();
+  });
 }
 
 document.getElementById('playButton').addEventListener("click", play);
