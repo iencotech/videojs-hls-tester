@@ -5,8 +5,18 @@ import videojs from 'video.js';
 var options = {
   controls: true,
   autoplay: true,
-  preload: 'auto',
+  preload: 'auto',   
   liveui: true,
+  html5: {
+    hls: {
+      // When this option is set to true,
+      // in Safari there is an issue with
+      // live streams where the player starts
+      // playing from position zero instead of
+      // from live position.
+      overrideNative: false,
+    },
+  }
 };
 var isPlayerReady = false;
 
