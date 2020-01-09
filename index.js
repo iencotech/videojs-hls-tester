@@ -16,7 +16,13 @@ var options = {
       // from live position.
       overrideNative: false,
     },
-  }
+  },
+  plugins: {
+    chromecast: {
+      addButtonToControlBar: false
+    },
+  },
+  techOrder: ['chromecast', 'html5']
 };
 var isPlayerReady = false;
 
